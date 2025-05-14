@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Request Your Custom GPT</title>
+  <style>
+    body {
+      background-color: #0a0a0a;
+      color: #f2f2f2;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 40px;
+    }
+    h1 {
+      color: #00ffe1;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    label, input, textarea {
+      display: block;
+      margin-bottom: 15px;
+      width: 100%;
+      max-width: 500px;
+    }
+    input, textarea {
+      padding: 10px;
+      background: #1a1a1a;
+      border: 1px solid #333;
+      color: #f2f2f2;
+      border-radius: 4px;
+    }
+    .button {
+      background: #00ffe1;
+      color: #000;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Request Your Custom GPT</h1>
+  <p>Fill out this quick form and you'll be redirected to complete payment of $25. GPT will then be developed and sent to you.</p>
+
+  <form action="https://formspree.io/f/xldbokzo" method="POST">
+    <label for="email">Your Email:</label>
+    <input type="email" name="email" required>
+
+    <label for="description">What do you want your GPT to do? Be specific</label>
+    <textarea name="description" rows="6" required></textarea>
+
+    <button type="submit" class="button">Submit</button>
+  </form>
+
+  <p style="margin-top: 20px;">
+    You’ll be redirected to <a href="https://your-gumroad-link.com" target="_blank" style="color: #00ffe1;">Gumroad</a> after submission to complete payment.
+  </p>
+</body>
+</html>
