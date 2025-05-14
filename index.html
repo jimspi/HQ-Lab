@@ -14,15 +14,19 @@
       padding: 20px;
     }
     header {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    header h1 {
-      font-size: 2.5em;
-      color: #00ffe1;
-      margin-bottom: 10px;
-    }
-    header p {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  margin-bottom: 30px;
+  padding: 10px 0;
+}
+
+header img {
+  height: 40px; /* matches the height of the text */
+  width: auto;
+  border-radius: 6px;
+}
       color: #ccc;
     }
     .gpt-grid {
@@ -69,8 +73,8 @@
   <header>
   <img src="logo.png" alt="GPT HQ Logo">
   <div>
-    <h1>GPT HQ</h1>
-    <p>Your Command Center for All Custom GPTs</p>
+    <h1 style="font-size: 1.8em; color: #00ffe1; margin-bottom: 2px;">GPT HQ</h1>
+    <p style="color: #ccc; font-size: 0.9em;">Your Command Center for All Custom GPTs</p>
   </div>
 </header>
   <main>
