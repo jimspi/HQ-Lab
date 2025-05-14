@@ -9,10 +9,17 @@
       color: #f2f2f2;
       font-family: 'Segoe UI', sans-serif;
       padding: 40px;
+      max-width: 800px;
+      margin: auto;
     }
     h1 {
       color: #00ffe1;
       font-size: 2em;
+      margin-bottom: 20px;
+    }
+    p {
+      color: #ccc;
+      font-size: 1em;
       margin-bottom: 20px;
     }
     label, input, textarea {
@@ -38,19 +45,23 @@
       border: none;
       cursor: pointer;
     }
+    .button:hover {
+      background-color: #00e0cc;
+    }
   </style>
 </head>
 <body>
   <h1>Request Your Custom GPT</h1>
+  <p>Thanks for your purchase! Fill out the form below so I can build your custom GPT — delivery within 48 hours.</p>
 
   <form action="https://formspree.io/f/xldbokzo" method="POST">
     <label for="email">Your Email:</label>
     <input type="email" name="email" required>
 
-    <label for="description">What do you want your GPT to do? Be specific</label>
+    <label for="description">What do you want your GPT to do? Be specific.</label>
     <textarea name="description" rows="6" required></textarea>
 
-    <button type="submit" class="button">Submit</button>
+    <button type="submit" class="button">Submit Request</button>
   </form>
 
 </body>
